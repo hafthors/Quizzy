@@ -1,23 +1,121 @@
 
-body{
-    background-color: rgb(233, 33, 60);
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-h1{
-
-    color: blueviolet;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: lightyellow;
 }
 
-h2{
+h1, h2, h2{
 
-    color: blueviolet;
+color: green;
+}
+header {
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
 }
 
-h3{
-
-    color: blueviolet;
+main {
+  flex: 1;
+  padding: 1rem;
+  background: #fafafa;
 }
 
-article{
-    color: blueviolet
+.card {
+  position: relative;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.answer.hidden {
+  display: none;
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
+
+.tags span {
+  background: #eee;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ccc" viewBox="0 0 24 24"><path d="M6 4v17l6-5 6 5V4z"/></svg>') no-repeat center/contain;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.bookmark.active {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 24 24"><path d="M6 4v17l6-5 6 5V4z"/></svg>') no-repeat center/contain;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+nav a.active {
+  color: black;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.dark-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
